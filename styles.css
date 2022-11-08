@@ -1,0 +1,41 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+    --lightgray: hsl(212, 45%, 89%);
+    --grayishblue: hsl(220, 15%, 55%);
+    --darkblue: hsl(218, 44%, 22%);
+}
+body{
+    background-color: var(--darkblue);
+}
+.container {
+    border: 2px outset var(--white);
+    border-radius: 30% 10%;
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    margin: 10% auto;
+    background-color:var(--lightgray);
+    text-align: center;
+}
+.text:hover{
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: 5;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
+@keyframes colors{
+    0% {color: #fff;}
+    40%{color: greenyellow;}
+    100%{color: blueviolet;}
+}
+.text:hover{
+
+}
+
+img {width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    display: block; /*have to make block-level element to center image with margin*/
+margin: auto;
+cursor: not-allowed;} /*set margin to auto*/
